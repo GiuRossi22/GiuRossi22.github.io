@@ -12,4 +12,40 @@ knitr::opts_chunk$set(echo = TRUE)
 
 variable aleatoria de poisson. 
 
+```{r}
+plot(1:10)
+
+x<-1:50
+f<-dpois(x,25)
+plot(x,f,col="red", type="h")
+
+1-ppois(19,25)
+points(x,f,pch=16,col="red")
+
+F<-ppois(x,25)
+plot(x,F,type="s")
+#probabilidade 0.033h
+#P(t=0.033h)=0,  modelo EXPONENCIAL
+
+#probabilidade 0.052h
+1-pexp(0.052,25)
+
+#la funcion de densidad es 
+curve(dexp,25)
+
+#la funcion de distribuicion es 
+curve(pexp,25)
+qexp(0.5,25)
+
+#simulacion entre dos tiempos de espera 
+
+rexp(1,25)
+
+simu<-rexp(500000,25)
+hist(simu)
+#El promedio es 
+mean(simu)
+
+#el valor teorico es 
+1/25```
 

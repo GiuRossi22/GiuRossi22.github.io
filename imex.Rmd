@@ -1,0 +1,15 @@
+---
+title: "Untitled"
+output: html_document
+date: "2024-04-09"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Solucion Practica 4 
+
+variable aleatoria de poisson. 
+
+

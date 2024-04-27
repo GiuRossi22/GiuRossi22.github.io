@@ -24,10 +24,14 @@ points(x,f,pch=16,col="red")
 
 F<-ppois(x,25)
 plot(x,F,type="s")
+
+#APARTADO 1
 #probabilidade 0.033h
 #P(t=0.033h)=0,  modelo EXPONENCIAL
 
+#APARTADO 2
 #probabilidade 0.052h
+# P(X>0.052) = 1 - P(X<=0.052)
 1-pexp(0.052,25)
 
 #la funcion de densidad es 
@@ -44,7 +48,7 @@ rexp(1,25)
 simu<-rexp(500000,25)
 hist(simu)
 #El promedio es 
-mean(simu)
+mean(simu) o median?
 
 #el valor teorico es 
 1/25```
